@@ -1,0 +1,802 @@
+<!-- This declares the document type as HTML5 -->
+<!DOCTYPE html>
+<!--key value pair-->
+<html lang="en"> <!-- attribute-language value-english-->
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tile of the web page -->
+    <title>Starter Website</title>
+    <style>
+         /* Internal CSS styles for basic formatting */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Header section styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Main content styles */
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+<!-- Body - main content -->
+<body>
+    <!-- Website header with the main heading -->
+    <header>
+        <h1>HTML Code-Exploration</h1>
+    </header>
+    <main>
+        <!-- Introduction to HTML -->
+        <h2>What is HTML?</h2>
+        <p>HTML stands for <strong>HyperText Markup Language</strong>
+            and is used to create the <em>structure</em> and <em>content</em> of a webpage.</p>
+
+        <h3>Boilerplate code</h3>
+        <p>It refers to repetitive code segments that are often used without modification in multiple programming projects. These code snippets typically serve as a foundation for various tasks and can be reused to save time and effort.</p>
+        <!-- Example of boilerplate HTML code -->
+        <code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  
+    &lt;/body&gt;
+&lt;/html&gt;</pre></code>
+
+        <!-- Explanation of HTML tags -->
+        <h2>What are Tags?</h2>
+        <p>HTML tags are like <b>keywords</b> that tell the web browser how to <em>format</em> and <em>display</em>
+            content on a web page. They are enclosed in angle brackets (&lt; and &gt;), and they usually come in
+            <strong>pairs</strong> [opening tag (&lt;p&gt;) and closing tag (&lt;/p&gt;)]. There are also few
+            <strong>self closing tags</strong>.
+        </p>
+
+        <!-- Explanation of HTML elements -->
+        <h2>What are Elements?</h2>
+        <p>An HTML element is a <em>building block</em> of an HTML document. It defines a specific part of the content,
+            such as a heading, paragraph, image, or link. Each element has a specific structure, often consisting of an
+            <strong>opening tag, content, and a closing tag</strong> (&lt;h1&gt;content&lt;/h1&gt;).
+        </p>
+
+        <!-- Explanation of attributes in HTML -->
+        <h2>What are Attributes?</h2>
+        <p>An HTML attribute is a special word used inside the ,<u>opening tag</u> of an HTML element to control its
+            <strong>behavior</strong> or <strong>appearance</strong>. It provides additional information about the
+            element, such as its <em>properties, values, or relationships</em> to other elements.
+        </p>
+
+        <!-- Section explaining different text formatting tags in HTML -->
+        <h2>Text Formatting Tags</h2>
+        <section>
+            <h3>Heading Tags</h3>
+            <!-- Explanation of heading levels in HTML -->
+            There are total 6 levels of headings in HTML.
+            <code><pre>
+&lt;h1&gt;&lt;/h1&gt; : This is used for the <strong>main title</strong> of a page.
+&lt;h2&gt;&lt;/h2&gt; : This is used for <strong>major sections</strong> of a page.
+&lt;h3&gt;&lt;/h3&gt; : This is used for <strong>subsections</strong> within a <em>major section</em>.
+&lt;h4&gt;&lt;/h4&gt; &lt;h5&gt;&lt;/h5&gt; &lt;h6&gt;&lt;/h6&gt; : These are used for further <strong>subdivisions</strong> of a <em>subsection</em>.
+                </pre></code>
+
+            <h3>Comments</h3>
+            <p>Comments are used to add <em>notes</em> or <em>explanations</em> to your HTML code. They won't be
+                displayed on the web page.
+                <code>&lt;!-- This is a comment --&gt;</code>
+
+            <h3>Bold text</h3>
+            <p>Makes text appear in <u>bold</u>.</p>
+            <code>&lt;b&gt;<b>This is the bold text</b>&lt;/b&gt;</code>
+
+            <h3>Italic text</h3>
+            <p>Makes text appear in <u>italics</u>.</p>
+            <code>&lt;i&gt;<i>This is the italic text</i>&lt;/i&gt;</code>
+
+            <h3>Underlined text</h3>
+            <p>Makes text appear <u>underlined</u>.</p>
+            <code>&lt;u&gt;<u>This is the underlined text</u>&lt;/u&gt;</code>
+
+            <h3>Strong tag</h3>
+            <p>Indicates text that is <u>strongly emphasized</u>.</p>
+            <code>&lt;strong&gt;<strong>This is the strong text</strong>&lt;/strong&gt;</code>
+
+            <h3>Emphasized tag</h3>
+            <p>Indicates text that is <u>emphasized</u>.</p>
+            <code>&lt;em&gt;<em>This is the emphasized text</em>&lt;/em&gt;</code>
+
+            <h3>Line break</h3>
+            <p>Inserts a line break within a <em>block-level element</em>.</p>
+            <code>&lt;br&gt;</code>
+
+            <h3>Horizontal rule</h3>
+            <p>Inserts a <u>horizontal line</u> on a page.</p>
+            <p>&lt;hr&gt;</p>
+
+            <h3>Subscript tag</h3>
+            <p>Displays text <u>below the baseline</u>.</p>
+            <code>&lt;sub&gt;<sub>This is the sub text</sub>&lt;/sub&gt;</code>
+
+            <h3>Superscript tag</h3>
+            <p>Displays text <u>above the baseline</u>.</p>
+            <code>&lt;sup&gt;<sup>This is the sup text</sup>&lt;/sup&gt;</code>
+        </section>
+
+        <h2>Link and Media Tags</h2>
+        <section><!-- Section explaining how to use links and media tags like <a> and <img> -->
+            <h3>Anchor tag</h3>
+            <p>It creates a hyperlink to a target URL.
+                It's essentially used to <strong>link one web page to another</strong>. When a user clicks on the link
+                created by the anchor tag, they are taken to the specified destination.</p>
+            <code>&lt;a href="https://example.com" target="_blank"&gt;Visit example.com&lt;/a&gt;</code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>href:Specifies the URL that the link will point to.</li>
+                <li>target: Controls where the linked document will be opened.</li>
+                <li>target=_blank: Opens the link in a <em>new tab or window</em>.</li>
+                <li>target=_self: Opens the link in the same window (default).</li>
+                <li>target=_top: Replaces the entire content of the window with the linked document.</li>
+                <li>target=_parent: Opens the link in the parent frame of the current frame.</li>
+            </ol>
+            </p>
+
+            <h3>Img tag</h3>
+            <p>The &lt;img&gt tag is used to embed an image into an HTML document. It allows you to <strong>display
+                    images</strong> on a webpage.</p>
+            <code>&lt;img src="Source_of_image" alt="Alternate text" width="400" height="300"&gt;</code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>src:Specifies the URL of the image file.</li>
+                <li>alt:Specifies an alternative <strong>text description</strong> for the image.</li>
+                <li>width:Specifies the <em>width</em> of the image in <em>pixels</em>.</li>
+                <li>heigth:Specifies the <em>height</em> of the image in <em>pixels</em>.</li>
+            </ol>
+            </p>
+
+            <h3>Audio tag</h3>
+            <p>The &lt;audio&gt tag is used to <strong>embed an audio file</strong> into an HTML document. It allows you
+                to play audio directly on a webpage.</p>
+            <code><pre>&lt;audio src="audio.mp3" controls autoplay loop muted preload="auto"&gt; 
+Your browser does not support the audio element.&lt;/audio&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                The text "Your browser does not support the audio element" is displayed if the browser cannot play the
+                audio.
+                <li>src:Specifies the URL of the audio file.</li>
+                <li>controls: Adds <strong>playback controls</strong> like play, pause, volume, etc. to the audio
+                    player.</li>
+                <li>autoplay: Automatically starts playing the audio when the page loads.</li>
+                <li>loop: Repeats the audio after it finishes playing.</li>
+                <li>muted: Mutes the audio by default.</li>
+                <li>preload="none"No preloading occurs (default).</li>
+                <li>preload="metadata" Only the metadata (like duration, title, etc.) of the audio file is preloaded.
+                    This is the default value.</li>
+                <li>preload="auto" The entire audio file is preloaded.</li>
+            </ol>
+            </p>
+
+            <h3>Video tag</h3>
+            <p>The &lt;video&gt; tag is used to <strong>embed a video</strong> into an HTML document. It allows you to
+                play videos directly on a webpage.</p>
+            <code><pre>&lt;video src="video.mp4" width="340" height="255" controls autoplay loop muted poster="thumbnail.jpg"&gt; 
+Your browser does not support the video tag.&lt;/video&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>src: Specifies the URL of the video file.</li>
+                <li>controls: Adds playback controls like play, pause, volume, etc. to the video player.</li>
+                <li>autoplay: Automatically starts playing the video when the page loads.</li>
+                <li>loop: Repeats the video after it finishes playing.</li>
+                <li>muted: Mutes the video by default.
+                <li>width: Specifies the width of the video player.</li>
+                <li>height: Specifies the height of the video player.</li>
+                <li>poster: Specify an image that will be displayed before the video starts playing (Thumbnail).</li>
+            </ol>
+            </p>
+        </section>
+
+        <h2>Inline Elements</h2>
+        <p>Inline elements are elements that do not start on a new line and <u>only take up as much space as their
+                content requires</u>. They flow with the surrounding text.</p>
+
+        <h2>Block Elements</h2>
+        <p>Block elements <u>start on a new line</u>, take up the full width of their container, and have margins,
+            borders, and padding.</p>
+
+        <h2>Container</h2>
+        <section>
+            <h3>Div tag</h3>
+            <p>It is a generic block container element used to ,<em>group</em> and <em>organize</em> content. It's often
+                referred to as a "division" or "container."</p>
+            <code>&lt;div&gt;This is div block&lt;/div&gt;</code>
+
+            <h3>Span tag</h3>
+            <p>It is a generic inline container element. It's used to <em>group and style text or elements</em> within a
+                document.</p>
+            <code>&lt;span&gt;<span>This is span block</span>&lt;/span&gt;</code>
+
+            <h3>Paragraph tag</h3>
+            <p>The &lt;p&gt; tag in HTML represents a paragraph. It is a <u>block-level element</u> used to group and
+                organize content.</p>
+            <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+
+            <h3>Pre tag</h3>
+            <p>It is a block level element of preformatted text. By using the &lt;pre&gt; tag, you can ensure that your
+                <em>content is displayed exactly as you intended</em>, maintaining its original structure and
+                formatting. It's <strong>perfect for showing code examples</strong> in a readable format.
+            </p>
+            <code><pre>&lt;pre&gt;Represents pre-formatted text   white spaces,     tabs, 
+                    line breaks are displayed as they are written.&lt;/pre&gt;</pre></code>
+        </section>
+
+        <h2>Lists</h2>
+        <section>
+            <h3>Ordered list</h3>
+            <p>An ordered list is a list where the items are <u>numbered</u>. It's used to present items in a
+                <em>specific sequence</em> or <em>order</em>.
+            </p>
+            <ol>
+                <li>Data</li>
+                <li>Data</li>
+                <li>Data</li>
+            </ol>
+            <code><pre>&lt;ol&gt; 
+    &lt;li&gt;Data&lt;/li&gt;
+    &lt;li&gt;Data&lt;/li&gt;
+    &lt;li&gt;Data&lt;/li&gt;
+&lt;/ol&gt;</pre></code>
+            <p><b>Attribute</b>:
+            <ol>
+                <li>type="1": Default numbering.
+                <li>type="A": Uppercase letters.</li>
+                <li>type="a": Lowercase letters.</li>
+                <li>type="I": Uppercase Roman numerals.</li>
+                <li>type="i": Lowercase Roman numerals.</li>
+            </ol>
+            </p>
+
+            <h3>Unordered list</h3>
+            <p>An unordered list is a list where the items <u>are not numbered</u>. It's used to present items without a
+                specific sequence or order.</p>
+            <ul>
+                <li>Data</li>
+            </ul>
+            <ul>
+                <li>Data</li>
+            </ul>
+            <ul>
+                <li>Data</li>
+            </ul>
+            <code><pre>&lt;ul&gt; 
+    &lt;li&gt;Data&lt;/li&gt;
+    &lt;li&gt;Data&lt;/li&gt;
+    &lt;li&gt;Data&lt;/li&gt;
+&lt;/ul&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>type="disc": Default bullet style (filled circle)
+                <li>type="circle": Open circle</li>
+                <li>type="square": Square</li>
+            </ol>
+            </p>
+
+            <h3>List item</h3>
+            <p>A list item is an <u>individual element</u> within a list. It represents a single item or entry in the
+                list.</p>
+            <code><pre>&lt;li&gt;Data&lt;/li&gt;</pre></code>
+
+            <h3>Description list</h3>
+            <p>A description list is an HTML element used to present a list of terms and their corresponding
+                descriptions. It's often used for creating <em>glossaries, definitions, or metadata</em>.</p>
+            <code><pre>&lt;dl&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+    &lt;dd&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;</pre></code>
+
+            <h3>Description term</h3>
+            <p>Specify the term or word that is being defined.</p>
+            <code>&lt;dt&gt;Term&lt;/dt&gt;</code>
+
+            <h3>Description definition</h3>
+            <p>Explains the meaning of a term.</p>
+            <code>&lt;dd&gt;Definition&lt;/dd&gt;</code>
+        </section>
+
+        <!-- Explanation of HTML tables -->
+        <h2>Tables</h2>
+        <p>HTML tables are used to organize and present data in a <strong>structured format</strong>. They consist of
+            rows and columns, where each intersection is called a cell.</p>
+        <section>
+            <!-- Example of a basic HTML table -->
+            <h3>Table</h3>
+            <code><pre>&lt;table&gt;
+    &lt;caption&gt;Demo Table&lt;/caption&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Column 1&lt;/th&gt;
+                &lt;th&gt;Column 2&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Data&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+&lt;/table&gt;</pre></code>
+
+            <h3>Table row</h3>
+            <code><pre>&lt;tr&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+    &lt;td&gt;Data&lt;/td&gt;
+&lt;/tr&gt;</pre></code>
+
+            <h3>Table cell/data</h3>
+            <code>&lt;td&gt;Data&lt;/td&gt;</code>
+
+
+            <h3>Table header group</h3>
+            <code><pre>
+&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Column 1&lt;/th&gt;
+        &lt;th colspan="2"&gt;Column2&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;</pre></code>
+
+            <h3>Table header cell</h3>
+            <code><pre>&lt;th&gt;Column 1&lt;/th&gt;
+&lt;th colspan="2"&gt;Column2&lt;/th&gt;</pre></code>
+
+            <h3>Table body group</h3>
+            <code><pre>
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+    </pre></code>
+
+            <h3>Table footer group</h3>
+            <code><pre>
+&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data&lt;/td&gt;
+    &lt;/tr&gt; 
+&lt;/tfoot&gt;
+            </pre></code>
+        </section>
+
+        <h2>Forms</h2>
+        <section>
+        <!-- Explanation of forms and form attributes -->
+            <p>A form is an HTML element used to <u>collect user input data</u>. It creates an interactive interface
+                where users can enter information, select options, or submit data to a server.</p>
+            <code><pre>&lt;form&gt; action="/action.php" method="post"&gt;&lt;/form&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>action: Specifies the URL of the page that will process the form data when it is submitted.</li>
+                <li>method: Specifies the HTTP method (GET or POST) used to send the form data to the server.</li>
+                <li>name: Specifies a name for the form (optional).</li>
+                <li>id: Specifies a unique ID for the form (optional).</li>
+            </ol>
+            </p>
+
+            <!-- Explanation of input fields in a form -->
+            <h3>Input</h3>
+            <p>An input element is a fundamental component of HTML forms that <u>allows users to enter data</u> into a
+                webpage.</p>
+            <code><pre>&lt;input type="text" name="username" value="John" placeholder="Enter username"&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>type: Specifies the type of input field.</li>
+                <li>name: Specifies the name of the input field.</li>
+                <li>value: Sets the initial value of the input field.</li>
+                <li>placeholder: Provides a hint to the user about the expected input.</li>
+            </ol>
+            </p>
+
+            <h3>Label</h3>
+            <p>A label element in a form is used to associate a text label with a form control, such as an input field,
+                select element, or textarea.</p>
+            <code><pre>&lt;label for="username"&gt;Username:&lt;/label&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>for: Specifies the ID of the form control that the label is associated with.</li>
+                <li>accesskey: Specifies a shortcut key that the user can press to focus on the associated form control.
+                </li>
+            </ol>
+            </p>
+
+            <h3>Password</h3>
+            <p>a password field is a text input that is used to collect sensitive information, such as a user's
+                password. When a user enters text into a password field, the characters are typically masked (usually
+                with asterisks or dots) to prevent others from seeing them.</p>
+            <code><pre>&lt;input type="password" name="password" placeholder="Enter password"&gt;</pre></code>
+
+
+            <h3>Textarea</h3>
+            <p>A textarea element in a form is used to create a multi-line text input field. It allows users to enter
+                larger amounts of text, such as paragraphs or essays.</p>
+            <code><pre>&lt;textarea name="description" rows="5" cols="30"&gt;Enter description&lt;/textarea&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>rows: Specifies the number of rows in the textarea.</li>
+                <li>cols: Specifies the number of columns in the textarea.</li>
+                <li>name: Specifies a name for the textarea (optional).</li>
+                <li>id: Specifies a unique ID for the textarea (optional).</li>
+                <li>placeholder: Specifies a hint text to be displayed in the textarea before the user enters any text.
+                </li>
+            </ol>
+
+            <h3>Checkbox</h3>
+            <p>A checkbox is a type of input element in a form that allows the user to select one or more options from a
+                list. It typically appears as a small square that can be checked or unchecked.</p>
+            <code><pre>&lt;input type="checkbox" name="agree" value="yes"&gt; I agree&lt;/input&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>name: Specifies the name of the checkbox, which is used to identify the value when the form is
+                    submitted.</li>
+                <li>value: Specifies the value that will be submitted to the server when the checkbox is checked. If the
+                    checkbox is unchecked, no value is submitted.</li>
+                <li>checked: Indicates that the checkbox is checked by default.</li>
+                <li>disabled: Disables the checkbox, preventing the user from checking or unchecking it.</li>
+            </ol>
+            </p>
+            <h3>Button</h3>
+            <p>A button in a form is an interactive element that allows users to trigger specific actions or submit form
+                data. It typically appears as a clickable button with a label or icon.</p>
+            <code><pre>&lt;button type="button"&gt;Click Me&lt;/button&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>type: Specifies the type of button. Common values include:</li>
+                <li>value: Specifies the value of the button (e.g., the text that appears on the button).</li>
+                <li>disabled: Disables the button, making it unclickable.</li>
+                <li>name: Specifies a name for the button (optional).</li>
+                <li>id: Specifies a unique ID for the button (optional).</li>
+            </ol>
+            </p>
+
+            <h3>Radio button</h3>
+            <p>A radio button is a type of form control that allows the user to select one option from a group of
+                mutually exclusive options. When one radio button is selected, all other radio buttons in the same group
+                are automatically deselected.</p>
+            <code><pre>
+&lt;input type="radio" name="gender" value="male"&gt; Male&gt;
+&lt;input type="radio" name="gender" value="female"&gt; Female&gt;
+                </pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>name: Specifies the name of the radio button group. All radio buttons within the same group must
+                    have the same name.</li>
+                <li>value: Specifies the value that will be submitted to the server when the radio button is selected.
+                </li>
+                <li>checked: Indicates that the radio button is selected by default.</li>
+            </ol>
+            </p>
+
+            <h3>Submit button</h3>
+            <p>A submit button is a type of button element used in forms to send the form data to the server for
+                processing. When the user clicks on the submit button, the form's action is triggered, and the collected
+                data is sent to the specified URL.</p>
+            <code><pre>&lt;input type="submit" value="Submit"&gt;&lt;/input&gt;</pre></code>
+            <p><b>Attributes</b>:
+            <ol>
+                <li>value: Specifies the text that appears on the button.</li>
+                <li>name: Specifies a name for the button (optional).</li>
+                <li>disabled: Disables the button, preventing it from being clicked.</li>
+            </ol>
+            </p>
+
+            <h3>Select:Drop-down list</h3>
+            <p>Select drop-down list is a form element that allows users to select one or more options from a predefined
+                list. It's often used when you want to provide a limited set of choices to the user.</p>
+            Option in a drop-down list:
+            <p>Option is an individual item within a select drop-down list. Each option represents a possible value that
+                the user can choose.</p>
+            <code><pre>
+&lt;select name="color"&gt;&lt;option value="red">Red&lt;/option&gt;&lt;/select&gt;
+&lt;select name="color"&gt;&lt;option value="blue">Blue&lt;/option&gt;&lt;/select&gt;</pre></code>
+            <p><b>Attributes of select element:</b>
+            <ol>
+                <li>multiple: Allows users to select multiple options.</li>
+                <li>size: Specifies the number of visible options in the list.</li>
+                <li>disabled: Disables the select element.</li>
+                <li>name: Specifies a name for the select element.</li>
+            </ol>
+            <b>Attributes of option element:</b>
+            <ol>
+                <li>value: Specifies the value of the option.</li>
+                <li>selected: Indicates that the option is selected by default.</li>
+                <li>disabled: Disables the option.</li>
+                </p>
+
+                <h3>Types of inputs:</h3>
+                <h4>File input</h4>
+                <code><pre>&lt;input type="file" name="file"&gt;&lt;/input&gt;</pre></code>
+
+                <h4>Range input</h4>
+                <code><pre>&lt;input type="range" name="valume" min="0" max="100"&gt;&lt;/input&gt;</pre></code>
+
+                <h4>Number input</h4>
+                <code><pre>&lt;input type="number" name="quantity" min="1" max="10"&gt;&lt;/input&gt;</pre></code>
+
+                <h4>Email input</h4>
+                <code><pre>&lt;input type="email" name="email" placeholder="Enter Email"&gt;&lt;/input&gt;</pre></code>
+
+                <h4>Search input</h4>
+                <code><pre>&lt;input type="search" name="query" placeholder="Search&gt;&lt;/input&gt;</pre></code>
+
+                <h4>URL input</h4>
+                <code><pre>&lt;input type="url" name="website" placeholder="Enter URL&gt;&lt;/input&gt;</pre></code>
+
+                <h4>Date input</h4>
+                <code><pre>&lt;input type="date" name="birthdate"&gt;&lt;/input&gt;</pre></code>
+
+                <h2>Form Validation</h2>
+                <h3>Required attribute</h3>
+                <p>This attribute specifies that the field must have a value before the form can be submitted.</p>
+                <code><pre>&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
+  &lt;br&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;
+  &lt;br&gt;
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password" required pattern=".{8,}" title="Password must be at least 8 characters"&gt;
+  &lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</pre></code>
+
+                <p>The name and email fields are required.The password field is required and must be at least 8
+                    characters long.</p>
+
+                <h3>Pattern</h3>
+                <p>This attribute defines a regex(regular expression) that the value must match.</p>
+                <code><pre>
+&lt;label for="password"&gt;Password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password" required pattern=".{8,}" title="Password must be at least 8 characters"&gt;</pre></code>
+                <p>The password field must contain at least 8 characters.</p>
+
+                <h3>Min attribute</h3>
+                <p>Specifies the minimum value allowed for the input.</p>
+                <code><pre>&lt;label for="age"&gt;Age:&lt;/label&gt;
+&lt;input type="number" id="age" name="age" min="13" required&gt;</pre></code>
+                <p>min="13": Sets the minimum allowed value to 13. It ensure that your website is only accessible to
+                    users who meet the minimum age requirement.</p>
+
+                <h3>Max attribute</h3>
+                <p>Specifies the maximum value allowed for the input.</p>
+                <code><pre>&lt;label for="age"&gt;Age:&lt;/label&gt;
+&lt;input type="number" id="age" name="age" min="0" max="120"&gt;</pre></code>
+
+                <p>The max attribute is set to 120 for the age input field. This means that the user cannot enter a
+                    value greater than 120. If they do, the form will not be submitted, and an error message will be
+                    displayed.</p>
+
+                <h3>Minlength attribute</h3>
+                <p>Specifies the minimum number of characters allowed in the input field.</p>
+                <code><pre>&lt;label for="phone"&gt;Phone number:&lt;/label&gt;
+&lt;input type="tel" id="phone" name="phone" minlength="10"&gt;</pre></code>
+                <p>The minlength attribute is set to 10 This means that the user must enter at least 10 characters.</p>
+
+                <h3>Maxlength attribute</h3>
+                <p>Specifies the maximum number of characters allowed in the input field.</p>
+                <code><pre>&lt;label for="phone"&gt;Phone number:&lt;/label&gt;
+&lt;input type="tel" id="phone" name="phone" minlength="10" maxlength="15"&gt;</pre></code>
+                <p>The minlength attribute is set to 10 and the maxlength attribute is set to 15. This means that the
+                    user must enter at least 10 characters but no more than 15 characters.</p>
+
+
+        </section>
+
+        <!-- Semantic HTML Elements-->
+        <h2>Semantic Elements</h2>
+        <p>Semantic elements in HTML are elements that provide meaning to the content of a web page, rather than just
+            describing its presentation. They help search engines, screen readers, and other tools understand the
+            structure and purpose of the content.</p>
+        <section>
+            <h3>Header section</h3 <p>Defines the header section of a document.</p>
+            <code><pre>&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+&lt;/header&gt;</pre></code>
+
+            <h3>Navigation links</h3>
+            <p>Defines navigational links.</p>
+            <code><pre>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre></code>
+
+            <h3>Main content section</h3>
+            <p>Defines the main content of a document.</p>
+            <pre><code>&lt;main&gt;
+    &lt;h2&gt;Welcome to My Website&lt;/h2&gt;
+    &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+
+            <h3>Section</h3>
+            <p>Defines a thematic grouping of content.</p>
+            <code><pre>&lt;section&gt;
+    &lt;h2&gt;Products&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Product 1&lt;/li&gt;
+            &lt;li&gt;Product 2&lt;/li&gt&gt;
+            &lt;li&gt;Product 3&lt;/li&gt;
+        &lt;/ul&gt;
+&lt;/section&gt;</pre></code>
+
+            <h3>Article</h3>
+            <p>Holds content that makes sense on its own such as articles, blogs, comments, etc.</p>
+            <code><pre>&lt;article&gt;
+    &lt;h2&gt;Blog Post&lt;/h2&gt;
+    &lt;p&gt;This is a blog post.&lt;/p&gt;
+&lt;/article&gt;</pre></code>
+
+            <h3>Aside:Sidebar content</h3>
+            <p>Defines aside content, like sidebars or related content.</p>
+            <code><pre>&lt;aside&gt&gt;
+    &lt;h3&gt;Sidebar Content&lt;/h3&gt;
+    &lt;p&gt;This is some sidebar content.&lt;/p&gt;
+&lt;/aside&gt;</pre></code>
+
+            <h3>Footer:footer section</h3>
+            <p>Defines the footer section of a document.</p>
+            <code><pre>&lt;footer&gt;
+    &lt;p&gt;&copy; 2024 My Website&lt;/p&gt;
+&lt;/footer&gt;</pre></code>
+
+            <h3>Figure:figure with optional caption</h3>
+            <p>Defines a group of content that is related to the main content, like an image and its caption.</p>
+            <code><pre>&lt;figure&gt;
+    &lt;img src="image.jpg" alt="A beautiful image"&gt;&lt;/img&gt;
+    &lt;figcaption&gt;A caption for the image.&lt;/figcaption&gt;
+&lt;/figure&gt;</pre></code>
+
+            <h3>Figcaption: caption for a figure</h3>
+            <p>It is used to describe the media in &lt;figure&gt;</p>
+            <code><pre>&lt;figcaption&gt;A caption for the image.&lt;/figcaption&gt;</pre></code>
+
+            <h3>Address</h3>
+            <code><pre>&lt;address&gt;
+    123 Main Street&lt;br&gt;
+    Anytown, USA&lt;br&gt;
+    &lt;a href="mailto:contact@example.com"&gt;contact@example.com&lt;/a&gt;
+&lt;/address&gt;</pre></code>
+        </section>
+
+        <h2>Miscellaneous</h2>
+        <section>
+            <h3>Entities</h3>
+            <p>HTML entities are special sequences of characters that represent characters that are difficult to
+                represent directly in HTML, such as special characters, characters that have special meaning in HTML, or
+                characters that are not supported by the character encoding being used.</p>
+            <code><pre>
+&amp;amp;: Represents the ampersand character (&)
+&amp;lt;: Represents the less than sign (<)
+&amp;gt;: Represents the greater than sign (>)
+&amp;nbsp;: Represents a non-breaking space
+&amp;copy;: Represents a copyright symbol (&copy;)</pre></code>Note: add & infront of entities.
+            <h3>Code tag</h3>
+            <p>The &lt;code&gt; tag in HTML is a semantic element used to define a piece of computer code. It is
+                designed to display computer output, such as code snippets, in a web browser. This makes it easier for
+                developers, coders, and educators to share code online.</p>
+            <p>Here's a simple JavaScript code snippet:</p>
+            <code><pre>&lt;code&gt;
+function greet(name) {
+console.log("Hello, " + name + "!");
+}
+&lt;/code&gt;</pre></code>
+
+            <h3>Quotation tag</h3>
+            <code><pre>&lt;blockquote&gt;Used for longer block-level quotes.&lt;/blockquote&gt;
+&lt;q&gt;Used for shorter, inline quotes.&lt;/q&gt;</pre></code>
+
+            <h3>Global Attributes></h3>
+            <p>
+            <ol>
+                <li>id: Specifies a unique ID for the element.</li>
+                <li>class: Specifies one or more class names for the element.</li>
+                <li>style: Specifies an inline style for the element.</li>
+                <li>title: Provides a tooltip text for the element.</li>
+                <li>lang: Specifies the language of the element's content.</li>
+                <li>Accesskey: Provides a keyboard shortcut to quickly focus on an element.</li>
+                <li>Class: Groups elements together for styling or JavaScript manipulation.</li>
+                <li>Contenteditable: llows users to edit the content of an element directly in the browser.</li>
+            </ol>
+            </p>
+
+            <h3>Iframe:Inline frame</h3>
+            <p>It is an HTML element that allows you to embed a document within another document. It creates a separate
+                browsing context within the current page, enabling you to display content from another source or even
+                another page on your website.</p>
+            <code><pre>&lt;iframe src="https://www.example.com" width="800" height="600"&gt;&lt;/iframe&gt;</pre></code>
+            <p><strong>Attributes:</strong>
+            <ol>
+                <li>src: Specifies the URL of the content to be embedded.</li>
+                <li>width: Specifies the width of the iframe.</li>
+                <li>height: Specifies the height of the iframe.</li>
+            </ol>
+            </p>
+
+
+            <h3>Style:Embedded CSS</h3>
+            <p>It is a method of directly including CSS styles within an HTML document. This is done by placing the CSS
+                rules within a &lt;style&gt; tag, which is usually placed in the &lt;head&gt; section of the HTML
+                document.</p>
+        </section>
+
+        <!-- Linking CSS and JavaScript with HTML-->
+        <h2>Linking</h2>
+        <section>
+            <h3>Linking css</h3>
+            <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+            <p>
+            <ol>
+                <li>Add a &lt;link&gt; tag to the &lt;head&gt; section of your HTML document.</li>
+                <li>Set the rel attribute to "stylesheet" to indicate that the linked file is a CSS stylesheet.</li>
+                <li>Set the href attribute to the path of the CSS file.</li>
+            </ol>
+            </p>
+
+            <h3>Linking js</h3>
+            <code>&lt;script src="script.js"&gt;</script></code>
+            <p>
+            <ol>
+                <li>Add a &lt;script&gt; tag to the &lt;head&gt; or &lt;body&gt; section of your HTML document.</li>
+                <li>Set the src attribute to the path of the JavaScript file.</li>
+            </ol>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+     
+</body>
+
+
+</html>
